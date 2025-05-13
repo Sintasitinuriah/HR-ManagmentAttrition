@@ -171,7 +171,7 @@ Untuk mempermudah pemantauan dan analisis risiko attrition secara berkala, telah
 
 Dashboard ini dapat diakses melalui tautan berikut (hanya dapat diakses di lingkungan lokal proyek):
 
-[Link Dashboard – Visualisasi Attrition](http://localhost:3000/public/dashboard/fdbc614a-8b6f-4d53-a5e8-084b485d1c12?tab=4-visualisasi-attrition)
+[Link Dashboard – Visualisasi Attrition](https://lookerstudio.google.com/reporting/8166700f-754a-4d09-800d-0f61f3c17e65)
 
 Dashboard ini menjadi alat penting bagi tim HR dalam merancang intervensi yang lebih proaktif dan berbasis data untuk mengurangi tingkat attrition di Jaya Jaya Maju.
 
