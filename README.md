@@ -20,10 +20,54 @@ Proyek ini akan berfokus pada analisis sejumlah faktor yang diduga berkontribusi
 | Jenis      | Keterangan                                                                 |
 |------------|------------------------------------------------------------------------------|
 | Title      | Jaya Jaya Maju                                                   |
-| Source     | [github](https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/) |
+| Source     | [github](https://github.com/dicodingacademy/dicoding_dataset/tree/main/employee) |
 | Visibility | Public                                                                      |
 
 Setup environment:
+
+### 1. Buat Conda Environment
+
+```bash
+conda create -n hr-attrition-env python=3.10 -y
+conda activate hr-attrition-env
+```
+
+### 2. Install Dependensi
+
+```bash
+pip install -r requirements.txt
+```
+Setup environment docker
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/Sintasitinuriah/HR-ManagmentAttrition.git
+cd HR-ManagementAttrition
+```
+
+### 2. Siapkan `docker-compose.yaml`
+
+Pastikan file `docker-compose.yaml` sesuai dengan struktur folder ini.
+
+### 3. Jalankan Docker Compose
+
+```bash
+docker-compose up -d
+```
+
+### 4. Akses Metabase
+
+Buka browser dan akses:
+
+```
+http://localhost:3000
+```
+
+### 5. Hentikan Docker
+
+```bash
+docker-compose down
+```
 
 ```bash
 # Clone repository
