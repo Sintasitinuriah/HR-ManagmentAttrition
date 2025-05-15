@@ -7,10 +7,16 @@ Jaya Jaya Maju merupakan salah satu perusahaan multinasional yang telah berdiri 
 Walaupun telah menjadi menjadi perusahaan yang cukup besar, Jaya Jaya Maju masih cukup kesulitan dalam mengelola karyawan. Hal ini berimbas tingginya attrition rate (rasio jumlah karyawan yang keluar dengan total karyawan keseluruhan) hingga lebih dari 10%.
 
 ### Permasalahan Bisnis
-Tingginya attrition rate berdampak langsung pada meningkatnya biaya rekrutmen dan pelatihan, serta hilangnya pengetahuan dan produktivitas. Oleh karena itu, tim HR memiliki beberapa tujuan utama:
-- Menurunkan tingkat attrition yang tinggi.
-- Memahami penyebab utama karyawan resign, agar dapat dilakukan intervensi yang tepat sasaran.
-- Memonitor risiko attrition secara berkala melalui dashboard interaktif.
+Jaya Jaya Maju, tengah menghadapi tantangan serius dalam manajemen sumber daya manusia, yaitu tingginya tingkat attrition (keluar/mundurnya karyawan) yang telah mencapai lebih dari 10% dari total karyawan aktif.
+
+Masalah ini memiliki urgensi tinggi karena:
+- Beban biaya tinggi: Setiap karyawan yang keluar berarti perusahaan harus mengeluarkan biaya tambahan untuk proses rekrutmen dan pelatihan karyawan baru.
+- Kehilangan produktivitas: Karyawan baru membutuhkan waktu untuk mencapai tingkat kinerja optimal, yang secara langsung memengaruhi output tim dan proyek.
+- Hilangnya pengetahuan organisasi: Karyawan yang keluar sering kali membawa pengetahuan dan pengalaman yang sulit digantikan.
+- Pengaruh terhadap moral kerja: Tingginya turnover dapat menurunkan semangat kerja karyawan yang tersisa dan memperburuk iklim organisasi.
+- Risiko jangka panjang: Jika tidak segera ditangani, kondisi ini dapat berdampak pada reputasi perusahaan sebagai tempat kerja dan menurunkan daya saing dalam menarik talenta terbaik.
+
+Permasalahan ini menunjukkan bahwa perusahaan membutuhkan pendekatan yang lebih strategis dan berbasis data dalam mengelola risiko attrition.
 
 ### Cakupan Proyek
 Proyek ini akan berfokus pada analisis sejumlah faktor yang diduga berkontribusi terhadap keputusan karyawan untuk keluar dari perusahaan. Faktor-faktor tersebut mencakup aspek keterlibatan kerja, intensitas perjalanan dinas, jenis jabatan tertentu, status pernikahan, serta kebiasaan lembur. Analisis akan membantu mengidentifikasi kelompok karyawan yang paling berisiko resign dan memberikan pemahaman yang lebih dalam mengenai kondisi-kondisi kerja yang dapat mendorong terjadinya attrition. Diperjelas dengan pembuatan dashboard interaktif.
@@ -69,20 +75,6 @@ http://localhost:3000
 docker-compose down
 ```
 
-```bash
-# Clone repository
-git clone https://github.com/Sintasitinuriah/HR-ManagmentAttrition.git
-cd HR-ManagementAttrition
-
-# Buat file file.yaml yang sesuai dengan konfigurasi folder ini
-
-# Jalankan Metabase dan PostgreSQL dengan Docker Compose
-docker-compose up -d
-
-# Hentikan kontainer jika selesai
-docker-compose down
-
-```
 # Data Understanding
 Dataset ini berisi informasi demografis dan metrik terkait pekerjaan dari karyawan, serta flag apakah karyawan tersebut melakukan attrition (keluar dari perusahaan).
 
@@ -213,7 +205,12 @@ Untuk mempermudah pemantauan dan analisis risiko attrition secara berkala, telah
 - Top 5 Karyawan berpotensi keluar sesuai JobRole berdasarkan Attrition_Probablity. 
 - Segmentasi karyawan berdasarkan tingkat risiko attrition.
 
-Dashboard ini dapat diakses melalui tautan berikut (hanya dapat diakses di lingkungan lokal proyek):
+Dashboard pada gambar di atas hanya dapat diakses di lingkungan lokal proyek saja. sehingga penjelasan dashboard ada pada video sintastnrh-video.mp4
+
+Dashboard alternatif:
+![dashboard](./image.png)
+
+Dashboard ini merupakan alternatif dashboard yang dibuat melalui looker studio:
 
 [Link Dashboard – Visualisasi Attrition](https://lookerstudio.google.com/reporting/8166700f-754a-4d09-800d-0f61f3c17e65)
 
